@@ -1,0 +1,41 @@
+#:kivy 1.11.1
+
+<ValueSlider>:
+    slider: slider
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            text: 'Val: {:0.2f}'.format(slider.value)
+        Slider:
+            id: slider
+            min: 0
+            max: 1
+        
+
+<Lfo>:
+    # BoxLayout:
+    value_slider: value_slider
+    textinput: textinput
+
+    orientation: 'horizontal'
+    #     height: sp(100)
+    ValueSlider:
+        id: value_slider
+    TextInput:
+        id: textinput
+        multiline: False
+
+
+<Lfos>:
+    # BoxLayout:
+    lfos: lfos_layout
+    orientation: 'vertical'
+    Button:
+        text: "Add LFO"
+        on_press: root.add_lfo()
+        height: 50
+    BoxLayout:
+        id: lfos_layout
+        orientation: 'horizontal'
+        # Lfo:
+        #     id: lfo

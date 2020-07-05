@@ -1,0 +1,24 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+python-rtmidi = "*"
+pysimplegui = "*"
+pylint = "*"
+numpy = "*"
+rope = "*"
+autopep8 = "*"
+imgui = "*"
+kivy = "*"
+pillow = "*"
+"kivy-deps.sdl2" = "*"
+pypiwin32 = "*"
+pygments = "*"
+"kivy-deps.glew" = "*"
+
+[requires]
+python_version = "3.6"
